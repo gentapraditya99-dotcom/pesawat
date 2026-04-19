@@ -1,5 +1,3 @@
-Berikut adalah kode HTML game "Flappy Corporate Jet" dengan sistem respawn yang **menempatkan jet di posisi awal take off (x=85, y=320)**, tetapi **score, coins, combo, dan progress lainnya tetap tersimpan persis seperti sebelum mati**. Semua achievement, logo, dan fitur lainnya telah diperbaiki dan ditingkatkan.
-```html
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -483,9 +481,9 @@ Berikut adalah kode HTML game "Flappy Corporate Jet" dengan sistem respawn yang 
         
         <div class="checkpoint-section">
             <div class="checkpoint-title">🔄 RESPAWN AT START (SAME SCORE)</div>
-            <div class="checkpoint-cost">Continue with your saved score • Cost: <span>150 🪙</span></div>
+            <div class="checkpoint-cost">Continue with your saved score • Cost: <span>1ooo 🪙</span></div>
             <div class="checkpoint-cost" style="font-size:0.6rem; color:#FFD966;">✨ Your score, coins, combo are preserved! Jet respawns at starting position.</div>
-            <button class="btn-checkpoint" id="checkpointRespawnBtn">💀 RESPAWN (150 COINS)</button>
+            <button class="btn-checkpoint" id="checkpointRespawnBtn">💀 RESPAWN (1000 COINS)</button>
         </div>
         
         <div class="gameover-buttons">
@@ -503,7 +501,7 @@ Berikut adalah kode HTML game "Flappy Corporate Jet" dengan sistem respawn yang 
         
         // ==================== CHECKPOINT SYSTEM - SAVES SCORE, RESPAWN AT START ====================
         let checkpointData = null;
-        const CHECKPOINT_COST = 150;
+        const CHECKPOINT_COST = 1000;
         
         // Save checkpoint at crash moment
         function saveCheckpointOnDeath() {
